@@ -1,0 +1,86 @@
+
+body {
+    background-color: #2f2f2f;
+    color: #ffffff;  
+  
+}
+.login-container {
+    margin: auto;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #444a57;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+.logo {
+            
+    font-family: "Acme", sans-serif;
+   font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    color: black;
+   
+}
+.triangle-divider {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;  /* Ancho del triángulo */
+    border-right: 50px solid transparent;
+    border-bottom: 30px solid #ffb400;    /* Color y altura del triángulo */
+    margin: 1.5rem auto;                  /* Centrado */
+}
+.form-control:focus {
+    border: none;
+    border-bottom: 2px solid #444a57;
+    color: #ffb400;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-input {
+    border: none;
+    border-bottom: 2px solid #b3b3b3;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+}
+
+.custom-input:focus {
+    border-bottom: 2px solid #ffb400;
+    background-color: transparent;
+} 
+
+.btn-login {
+    background-color:  black;
+    border: none;
+    color: #ffb400;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.btn-login:hover {
+    background-color: #333333;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+}
+
+.link-signup {
+    color: #b3b3b3;
+}
+
+.link-signup a {
+    color: #ffb400;
+    text-decoration: none;
+}
+
+.link-signup a:hover {
+    text-decoration: underline;
+}
