@@ -1,29 +1,30 @@
-
+/* Estilo general */
 body {
-    background-color: #2f2f2f;
-    color: #ffffff;  
-  
+    background-color: #b3b3b3; /* Cambia este color según la página si es necesario */
+    color: #ffffff;
 }
-.login-container {
+
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+/* Estilos de contenedor para login y registro */
+.login-container,
+.signup-container {
     margin: auto;
     width: 40%;
     padding: 2rem;
     border-radius: 10px;
     background-color: #444a57;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    
 }
 
-.logo {
-            
-    font-family: "Acme", sans-serif;
-   font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    color: black;
-   
-}
+/* Estilo para el triángulo decorativo */
 .triangle-divider {
     width: 0;
     height: 0;
@@ -32,6 +33,8 @@ body {
     border-bottom: 30px solid #ffb400;    /* Color y altura del triángulo */
     margin: 1.5rem auto;                  /* Centrado */
 }
+
+/* Estilos para los campos de entrada */
 .form-control:focus {
     border: none;
     border-bottom: 2px solid #444a57;
@@ -52,10 +55,12 @@ body {
 .custom-input:focus {
     border-bottom: 2px solid #ffb400;
     background-color: transparent;
-} 
+    color: black;
+}
 
-.btn-login {
-    background-color:  black;
+/* Estilos para los botones */
+.btn-common {
+    background-color: #333333;
     border: none;
     color: #ffb400;
     font-weight: bold;
@@ -63,24 +68,26 @@ body {
     margin-top: 5%;
 }
 
-.btn-login:hover {
-    background-color: #333333;
+.btn-common:hover {
+    background-color: #9b9b9b;
 }
 
+/* Estilos para mensajes de error */
 .error-message {
     color: #ff4d4d;
     font-size: 0.9rem;
 }
 
-.link-signup {
+/* Estilos para enlaces */
+.link-common {
     color: #b3b3b3;
 }
 
-.link-signup a {
+.link-common a {
     color: #ffb400;
     text-decoration: none;
 }
 
-.link-signup a:hover {
+.link-common a:hover {
     text-decoration: underline;
 }

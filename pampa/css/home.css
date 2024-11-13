@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+   
+    background-color:#b3b3b3;
+}
+
+/* Tarjetas */
+.card {
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    color: #ffb400;
+    background-color: #444a57;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #3b4b5e;
+    filter: brightness(1.2);
+    z-index: 2;
+}
+
+/* Eliminar subrayado azul en los enlaces de las tarjetas */
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card a:hover,
+.card a:focus,
+.card a:active {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+    background-color: white;
+    color: #ffb400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+}
+
+/* Logo */
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    background-color: #2d3e50;
+    color: #fff;
+    padding-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sidebar a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #3b4b5e;
+    opacity: 0.8;
+}
+
+/* Gráfico circular */
+.circular-chart {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Lista */
+.list-group {
+    list-style-type: none;
+}

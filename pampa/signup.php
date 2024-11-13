@@ -20,15 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Acme&family=Antonio:wght@100..700&family=Architects+Daughter&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&display=swap');
     </style>
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100">
-    <div class="signup-container col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 p-3 p-md-5 mt-5 py-5">
+    <div class="signup-container col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 p-3 p-md-5 my-2 py-5">
         <div class="logo pt-0 mt-0">
-            <h3><i class="fab fa-gitlab"></i> PamPa</h3>
+            <h2><i class="fab fa-gitlab"></i> PamPa</h2>
         </div>
         <div class="triangle-divider"></div>
-        <h3 class="text-center pt-5 mt-5">Registrate</h3>
+        <h3 class="text-center pt-2 mt-2">Registrate</h3>
         <form action="signup.php" method="POST">
             <div class="form-group p-0 m-0">
                 <label for="email"></label>
@@ -42,10 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="confirm_password"></label>
                 <input type="password" class="form-control custom-input" id="confirm_password" name="confirm_password" placeholder="Confirma tu contraseña" required>
             </div>
-            <button type="submit" class="btn btn-signup mt-5">Registrarse</button>
+            <button type="submit" class="btn btn-common mt-5">Registrarse</button>
         </form>
-        <div class="text-center link-login mt-3">
-            ¿Ya tienes una cuenta? <a href="login.php">Inicia sesión</a>
+        <div class="text-center link-common mt-3">
+            ¿Ya tienes una cuenta? <br> <a href="login.php">Inicia sesión</a>
         </div>
     </div>
 
