@@ -35,7 +35,7 @@ $alumnos = [
     <div class="row no-gutters">
         <?php include 'sidebar.php'; ?>
 
-        <main class="col-md-7 ml-sm-auto col-lg-9 px-md-5 mt-4">
+        <main class="col-md-7 ml-sm-auto col-lg-9  mt-4">
           <div class="d-flex align-items-center mb-3">
     <div class="col-6">
         <h1>Alumnos</h1>
@@ -46,33 +46,33 @@ $alumnos = [
         </button>
     </div>
 </div>
-<div class= "row d-flex  justify-content-center p-2 m-0  ">
-   <div class="col-sm-12 col-md-10 px-2">
+<div class= "row d-flex  justify-content-center p-0 mx-0 mt-3 ">
+   <div class="col-sm-12 col-md-10 px-0 m-0">
    
-    <table class="table-sm table-border table-hover  p-3 m-2">
-        <thead class="bg-dark">
+    <table class="table-border table-hover table-sm   p-0 m-1">
+        <thead class="bg-dark text-center">
             <tr>
-                <th>Nombre y Apellido</th>
+                <th>Nombre</th>
                 <th>DNI</th>
                 <th>Legajo</th>
                 <th>Curso</th>
                 <th>Estado</th>
-                <th>Acciones</th>
+                <th><i class="fa-solid fa-circle-exclamation"></i></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($alumnos as $alumno): ?>
                 <tr class="bg-secondary">
                     <td><?php echo $alumno['nombre']; ?></td>
-                    <td><?php echo $alumno['dni']; ?></td>
-                    <td><?php echo $alumno['legajo']; ?></td>
-                    <td><?php echo $alumno['curso']; ?></td>
-                    <td><?php echo $alumno['estado']; ?></td>
+                    <td class="text-center"><?php echo $alumno['dni']; ?></td>
+                    <td  class="text-center"><?php echo $alumno['legajo']; ?></td>
+                    <td  class="text-center"><?php echo $alumno['curso']; ?></td>
+                    <td  class="text-center"><?php echo $alumno['estado']; ?></td>
                     <td>
-                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editAlumnoModal" onclick="populateEditModal('<?php echo $alumno['nombre']; ?>', '<?php echo $alumno['dni']; ?>', '<?php echo $alumno['legajo']; ?>', '<?php echo $alumno['curso']; ?>', '<?php echo $alumno['estado']; ?>')">
+                        <button class="btn btn-primary btn-sm mt-2" data-toggle="modal" data-target="#editAlumnoModal" onclick="populateEditModal('<?php echo $alumno['nombre']; ?>', '<?php echo $alumno['dni']; ?>', '<?php echo $alumno['legajo']; ?>', '<?php echo $alumno['curso']; ?>', '<?php echo $alumno['estado']; ?>')">
                             <i class="fas fa-edit"></i>
                         </button>
-                        <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteAlumnoModal" onclick="setDeleteModal('<?php echo $alumno['nombre']; ?>')">
+                        <button class="btn btn-danger btn-sm mt-2" data-toggle="modal" data-target="#deleteAlumnoModal" onclick="setDeleteModal('<?php echo $alumno['nombre']; ?>')">
                             <i class="fas fa-trash"></i>
                         </button>
                     </td>
@@ -98,7 +98,7 @@ $alumnos = [
                 <!-- Aquí irían los campos para agregar un nuevo alumno -->
                 <form>
                     <div class="form-group">
-                        <label for="nombre">Nombre y Apellido</label>
+                        <label for="nombre">Nombre</label>
                         <input type="text" class="form-control" id="nombre" required>
                     </div>
                     <div class="form-group">
@@ -145,7 +145,7 @@ $alumnos = [
                 <form>
                     <div class="form-row">
                         <div class="form-group col-10 col-md-6 mb-3">
-                            <label for="nombre">Nombre y Apellido</label>
+                            <label for="nombre">Nombre</label>
                             <input type="text" class="form-control" id="nombre" required>
                         </div>
                         <div class="form-group col-10 col-md-6 mb-3">
@@ -195,7 +195,7 @@ $alumnos = [
                 <form>
                     <div class="form-row">
                         <div class="form-group col-12 col-md-6">
-                            <label for="editNombre">Nombre y Apellido</label>
+                            <label for="editNombre">Nombre</label>
                             <input type="text" class="form-control" id="editNombre" required>
                         </div>
                         <div class="form-group col-12 col-md-6">
