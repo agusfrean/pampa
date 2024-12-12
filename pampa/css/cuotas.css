@@ -1,6 +1,8 @@
-body {
-    background-color: white;
+body{
+    
+    background-color:white;
 }
+
 .minimal-title-with-line {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
@@ -20,18 +22,29 @@ body {
     background-color: #555;
     
 }
+
 th {
-    
     color: #ffb400;
 }
-#tabla-alumnos {
-    color: black;
-   
+.card {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco casi opaco */
+    box-shadow: rgba(0, 0, 0, 0.1); /* Sombra discreta */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.table-responsive {
+
+    border-radius: 8px;
+    background-color: #b3b3b3; 
+}
+
+.table th {
+  
+    color: #ffa500; 
+}
+.card-body {
+    box-shadow: inset 5px 0 0 0 #2d3e50; /* Simula un color solo en el lado izquierdo */
 }
 .card-title{
     color: #ffb400;
-}
-
-.card-body {
-    box-shadow: inset 5px 0 0 0 #2d3e50; /* Simula un color solo en el lado izquierdo */
 }

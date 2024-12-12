@@ -55,7 +55,7 @@ if (!isset($_SESSION['email'])) {
 
                 <!-- Card Cuotas Pagas con gráfico de torta -->
                 <div class="col-sm-6 col-lg-3">
-                    <a href="#cuotas">
+                    <a href="cuotas.php">
                         <div class="card mb-3">
                             <div class="card-header h5">
                                 <i class="fa-solid fa-chart-line fa-2x" style="color: #ffb400;"></i>
@@ -72,7 +72,7 @@ if (!isset($_SESSION['email'])) {
 
                 <!-- Card Facturación -->
                 <div class="col-sm-6 col-lg-3">
-                    <a href="#facturacion">
+                    <a href="facturacion.php">
                         <div class="card mb-3">
                             <div class="card-header h5">
                                 <i class="fa-solid fa-file-invoice fa-2x" style="color: #ffb400;"></i>
